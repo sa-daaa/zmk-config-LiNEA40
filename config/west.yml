@@ -26,9 +26,10 @@ manifest:
       import: app/west.yml
     # zmk-pmw3610-driver（inorichi）は削除: ZMK v4/Zephyr 4.1 に "pixart,pmw3610" の
     # devicetreeバインディングが標準搭載されており、外部モジュールと重複して衝突するため
+    # main は ZMK v4 の zmk_endpoint_get_selected() 等の新APIと xiao_ble//zmk 用overlayに対応済み
     - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: v0.3-branch
+      revision: main
     - name: zmk-mouse-gesture
       remote: kot149
       revision: v1
