@@ -98,4 +98,17 @@
         compatible = "zmk,input-listener";
         status = "disabled";
     };
+
+    // rgbled_adapter は "seeeduino_xiao_ble" 用のボード別overlayでしか
+    // led-red/green/blue エイリアスを設定しないため、xiao_ble ボードでも
+    // 動くように自前で定義する（本来は板が定義するledをそのまま使う）
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
+
+    leds {
+        status = "okay";
+    };
 };
