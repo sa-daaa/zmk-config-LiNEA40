@@ -53,5 +53,14 @@ manifest:
     - name: zmk-feature-custom-settings
       remote: cormoran
       revision: main
+    # ランタイムでマクロ/コンボを編集できるようにする
+    - name: zmk-feature-runtime-macro
+      remote: cormoran
+      revision: main
+      import: true
+    - name: zmk-feature-runtime-combo
+      remote: cormoran
+      revision: main
+      import: true
   self:
     path: config
