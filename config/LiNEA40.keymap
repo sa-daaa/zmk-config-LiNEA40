@@ -258,12 +258,12 @@
 
     task_view {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LG(D)>;
+        bindings = <&kp LG(TAB)>;
     };
 
     show_desk {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(TAB)>;
+        bindings = <&kp LG(D)>;
     };
 
     vdesk_prev {
